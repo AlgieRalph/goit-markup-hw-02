@@ -14,9 +14,10 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
-  background-color: var(--white);
+  color: var(--slate);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 /* General Styles */
@@ -25,82 +26,53 @@ body {
   list-style: none;
 }
 
-.page {
+.nav-menu .page {
   text-decoration: none;
-}
-
-.item {
-  text-decoration: none;
+  color: var(--navy-blue);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .project {
   text-decoration: none;
 }
 
-.title {
-  color: var(--navyblue, #2e2f42);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: 0.4px;
+.benefits .title {
+  color: var(--navyblue);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
 }
 
-.description {
-  color: var(--slate, #434455);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem;
-  letter-spacing: 0.32px;
+.benefits .description {
+  color: var(--slate);
+  line-height: 1.71;
 }
 
 .section-title {
-  color: var(--navyblue, #2e2f42);
+  color: var(--navyblue);
+  text-align: center;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
+  line-height: 1.17;
 }
 
-.primary {
-  color: var(--white, #fff);
-  font-family: inherit;
+.bg-team {
+  background-color: var(--cloud);
+}
+
+.team .name,
+.team .position {
+  color: var(--navyblue);
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
-  cursor: pointer;
+  line-height: 1.2;
+  text-align: center;
 }
 
-.name {
-  color: var(--navyblue, #2e2f42);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.4px;
-}
-
-.type {
-  color: var(--slate, #434455);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-}
-
-.position {
-  color: var(--slate, #434455);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+.team .position {
+  color: var(--slate);
 }
 
 /* End of General Styles */
@@ -109,34 +81,29 @@ body {
 
 /* Header */
 
-.page-header {
-  background: var(--white, #fff);
-}
-
 .logo-link {
+  font-size: 0;
   text-decoration: none;
 }
 
-.logo {
-  color: var(--iris, #4d5ae5);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
+.logo-link > span {
+  font-size: 26px;
+}
+
+.logo,
+.studio {
+  display: inline-block;
+  color: var(--iris);
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
-  line-height: 21px;
+  line-height: 1.2;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
 
 .studio {
   color: var(--navyblue, #2e2f42);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .page {
@@ -148,105 +115,96 @@ body {
   letter-spacing: 0.32px;
 }
 
-.page:hover,
-.page:focus {
-  color: var(--ocean, #404bbf);
-}
-.page:active {
-  color: var(--ocean, #404bbf);
-}
-
-.item {
-  color: var(--slate, #434455);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .item:hover,
+.contacts-menu .item:focus {
+  color: var(--iris);
 }
 
-.item:hover,
-.item:focus {
-  color: var(--ocean, #404bbf);
+.contacts-menu .item {
+  color: var(--slate);
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.item:active {
-  color: var(--ocean, #404bbf);
+.bg-hero {
+  background: var(--navy-blue);
 }
 
 /* Section 1 */
 
-.hero {
-  background: var(--navyblue, #2e2f42);
-}
-
 .hero-title {
-  color: var(--white, #fff);
-  font-size: 56px;
-  font-style: normal;
+  color: var(--white);
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.button {
+  border-color: transparent;
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.button.primary {
+  color: white;
+  background: var(--iris);
+  font-size: 16px;
   font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 1.12px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
-.primary {
-  background: var(--iris, #4d5ae5);
-}
-
-.primary:hover,
-.primary:focus {
-  background: var(--ocean, #404bbf);
+.button.primary:hover,
+.button.primary:focus {
+  background: var(--ocean);
 }
 
 /* Footer */
 
-.bg-footer {
-  background: var(--navyblue, #2e2f42);
+.page-footer.bg-footer {
+  background: var(--navy-blue);
 }
 
-.studio-2 {
-  color: var(--cloud, #f4f4fd);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
+.page-footer.bg-footer .studio-2 {
+  color: var(--cloud);
 }
 
 .footer-description {
-  color: var(--cloud, #f4f4fd);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  color: var(--cloud);
 }
 
 /* Portfolio */
 
 /* Buttons */
 
-.filter {
-  color: var(--iris, #4d5ae5);
-  font-family: "Roboto", sans-serif;
+.button.filter {
+  color: var(--iris);
+  background-color: #f5f5fa;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
-  cursor: pointer;
+  line-height: 1.62;
 }
 
-.filter {
-  border-radius: 4px;
-  border: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--cloud, #f4f4fd);
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
+  background: var(--ocean);
+  color: var(--cloud);
 }
 
-.filter:hover,
-.filter:focus {
-  background: var(--ocean, #404bbf);
-  color: var(--white, #fff);
+.project .name {
+  color: var(--navy-blue);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
