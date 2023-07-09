@@ -91,7 +91,8 @@ body {
 }
 
 .logo,
-.studio {
+.studio,
+.studio-2 {
   display: inline-block;
   color: var(--iris);
   font-family: "Raleway", sans-serif;
